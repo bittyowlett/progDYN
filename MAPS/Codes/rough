@@ -1,0 +1,14 @@
+
+for j in rlist:                        # compute for all values of 'r'
+	for i in n:
+		print (rlist[j])             # compute each element of x for a paticular 'r'
+	        #rel = rlist[j]*x0*(1-x0)     # creating just the next element using map relation 
+	        #x.append(rel)                # adding the newly computed element in the original x array
+	        #x0 = rel                     # allocating the newly computed element as seed for the next computation
+	        i += 1                       # basic increment for the next step 
+    xlist.append(x)                  # after completion of computation of one set of x(r) for a particular r, adding this list into documentation in xlist variable
+
+
+print (xlist)
+#plt.plot(rlist, )
+#plt.show()
