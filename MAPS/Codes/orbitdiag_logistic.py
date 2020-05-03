@@ -5,7 +5,7 @@ import time
 start_time = time.time()             # start time of execution of code
 seed = 0.1;                          # seed value or starting value
 
-rnum = 50000                         	# number of values 'r' takes. 
+rnum = 5000                       	# number of values 'r' takes. 
 rlist = np.linspace(0.1,4,rnum)        # array storing all values of 'r'
 
 plt.figure()                         # generating a figure element beforehand
@@ -37,6 +37,10 @@ for i in range(600,N):
 	plt.plot(rlist,xlistarr[:,i],'ob',markersize=0.1)
 
 print("--- %s seconds ---" % (time.time() - start_time))	
+plt.xlabel('r')
+plt.ylabel('x')
+plt.title('Orbit Diagram for Logistic Map')
+plt.xlim([3.5, 4])
 plt.show()
 
 
