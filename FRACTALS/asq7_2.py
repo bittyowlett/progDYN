@@ -22,7 +22,7 @@ data_y = []
 
 for r in R:
     # Initial 1000 iteration
-    x_init = Iterate(x_np1,1000,0.5,r)
+    x_init = Iterate(x_np1,1000,100,r)
 
     # Next 1000 iterations
     x_data = Iterate(x_np1,1000,x_init[-1],r)
@@ -34,7 +34,7 @@ for r in R:
 plt.plot(data_r,data_y,"b.",markersize=0.2)
 plt.xlabel(r'$\alpha$')
 plt.ylabel("x*")
-plt.title('Orbit diagram for $x_{n+1} = $' r'$\alpha sin(x)$'  )
+plt.title('Orbit diagram for $x_{n+1} = $' r'$\alpha sin(x_n)$' ' at $seed=3.1$'  )
 plt.show()
 
 
