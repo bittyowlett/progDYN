@@ -16,7 +16,7 @@ def Iterate(func,times,x0,r):
     return x
 
  
-R = np.linspace(0,5,501)
+R = np.linspace(-5,5,501)
 
 data_r = []
 data_y = []
